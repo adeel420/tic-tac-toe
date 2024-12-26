@@ -1,0 +1,187 @@
+.front{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-cont .title{
+    text-align: center;
+    padding-top: 10px;
+}
+.openPopup{
+    background-color: #f54104;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    height: 40px;
+    width: 40px;
+    align-self: center;
+    padding: 6px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+.openPopup:hover{
+    background-color: transparent;
+    color: #f54104;
+    border: 2px solid #f54104;
+}
+.home-cont .tic-tac{
+    border: 3px solid white;
+    margin-top: 15px;
+}
+.home-cont .container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-cont .container .cont{
+    border: 3px solid white;
+    font-size: 60px;
+    font-weight: 600;
+    height: 150px;
+    width: 150px;
+    padding: 25px;
+    display: flex;
+    cursor: pointer;
+    color: #f54104;
+    align-items: center;
+    justify-content: center;
+}
+.popup{
+    background-color: rgba(0, 0, 0, 0.436);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.popup .popup-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: linear-gradient(135deg ,#020025, #09086e);
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    transform: translate(-50%, -50%);
+}
+.times{
+    background-color: #f54104;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    padding: 6px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+}
+.times:hover{
+    background-color: transparent;
+    color: #f54104;
+    border: 1px solid #f54104;
+}
+.popup .popup-container .btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    margin-top: 20px;
+}
+.btns button{
+    background-color: #f54104;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 26px;
+    padding: 6px;
+    border-radius: 5px;
+}
+.btns button:hover{
+    background-color: transparent;
+    color: #f54104;
+    border: 1px solid #f54104;
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px){
+    .front{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home-cont .title{
+        text-align: center;
+        font-size: 80px;
+        padding-top: 150px;
+    }
+    .openPopup{
+        background-color: #f54104;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 80px;
+        height: 120px;
+        width: 120px;
+        align-self: center;
+        padding: 6px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 145px !important;
+    }
+    .home-cont .tic-tac{
+        border: 3px solid white;
+        margin-top: 55px;
+    }
+    .home-cont .container {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+    }
+    .home-cont .container .cont{
+        border: 3px solid white;
+        font-size: 120px;
+        font-weight: 600;
+        height: 300px;
+        width: 300px;
+        padding: 25px;
+        display: flex;
+        cursor: pointer;
+        color: #f54104;
+        align-items: center;
+        justify-content: center;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 35px;
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .home-cont .container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px);
+    }
+    .home-cont .container .cont{
+        border: 3px solid white;
+        font-size: 60px;
+        font-weight: 600;
+        height: 100px;
+        width: 100px;
+        padding: 25px;
+        display: flex;
+        cursor: pointer;
+        color: #f54104;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,19 @@
+.results{
+    margin-top: 15px;
+}
+.results .head i{
+    display: flex;
+    text-decoration: underline;
+    justify-content: space-around;
+}
+@media screen and (min-width: 2000px) and (max-width: 2560px){
+    .results{
+        margin-top: 55px;
+    }
+    .results .head i{
+        display: flex;
+        font-size: 46px;
+        text-decoration: underline;
+        justify-content: space-around;
+    }
+}
